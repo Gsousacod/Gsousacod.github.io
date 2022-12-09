@@ -160,17 +160,17 @@ section .content h2{
     color: #4717f6;
 }
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-#softskil{
+#hardskil{
     background-color: #101312;
     height: 500px;
 }
-#softskil h3{
+#hardskil h3{
     padding-bottom: 50px;
     color: #4717f6;
     font-size: 2.5rem;
     text-align: center;
 }
-section .card_soft{
+section .card_hard{
     justify-content: center;
     color: #fff;
     display: flex;
@@ -180,17 +180,17 @@ section .card_soft{
 #css i{color: #ffff00;}
 #mysql i{color: #1b98e0;}
 #git i{color: #f1502f;}
-section .softcards h2{
+section .hardcards h2{
     padding: 10px 15px;
     margin-left: 30px;
     text-align: center;
     border: solid 1px #fff;
 }
-section .softcards h2:hover{
+section .hardcards h2:hover{
     transition: 0.2s;
     font-size: 1.2rem;
 }
-section .softcards i{
+section .hardcards i{
     margin-right: 5px;
 }
 
