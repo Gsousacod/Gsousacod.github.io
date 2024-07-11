@@ -199,6 +199,7 @@ input:checked + .slider:before {
     height: 500px;
     background-color: #3700b3;
     filter: blur(200px);
+    /* animation: animatedcircle 2s linear infinite; */
 }
 
 @media (max-width: 768px) {
@@ -230,3 +231,15 @@ input:checked + .slider:before {
     }
 }
 
+@keyframeS animatedcircle{
+    0%{
+        width: 600px;
+        height: 600px;
+        filter: blur(300px);
+    } 100%{
+        width: 900px;
+        height: 900px;
+        filter: blur(500px);
+    }
+
+}
