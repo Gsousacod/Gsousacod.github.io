@@ -1,0 +1,140 @@
+#follower {
+  top: -5px;
+  right: 300px;
+  width: 0; /* Width and height are controlled by the waves */
+  height: 0;
+  position: absolute;
+  pointer-events: none; /* Makes the div non-interactive */
+  transform: translate(-50%, -50%);
+  z-index: 100; /* Ensure follower is above the background */
+}
+
+.wave {
+  position: absolute;
+  width: 350px; /* Aumentado de 200px para 300px */
+  height: 350px; /* Aumentado de 200px para 300px */
+  background-color: #4ce016b3;
+  border-radius: 50%;
+  animation: wave-pulse 10s infinite linear;
+  transform: scale(0);
+  filter: blur(100px);
+}
+
+@keyframes wave-pulse {
+  0% {
+      transform: scale(0);
+      opacity: 1;
+      filter: blur(150px);
+  }
+  50% {
+      transform: scale(1);
+      opacity: 0.7;
+      filter: blur(150px);
+  }
+  100% {
+      transform: scale(2);
+      opacity: 0;
+      filter: blur(150px);
+  }
+}
+
+.wave:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.wave:nth-child(2) {
+  width: 400px; /* Aumentado de 250px para 350px */
+  height: 400px; /* Aumentado de 250px para 350px */
+  animation-delay: 1s;
+}
+
+.wave:nth-child(3) {
+  width: 500px; /* Aumentado de 300px para 400px */
+  height: 500px; /* Aumentado de 300px para 400px */
+  animation-delay: 2s;
+}
+
+
+
+/*
+======================Terminal=========================================================
+*/
+
+
+
+.window {
+  z-index: 6;
+  color: #ffffff;
+  background-color: black;
+  border: 1px solid #00ff00;
+  border-radius: 5px;
+  width: 1000px;
+  height: 400px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.title-bar {
+  display: flex;
+  align-items: center;
+  background-color: #2e2e2e;
+  padding: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.traffic-lights {
+  display: flex;
+  margin-right: 10px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.red {
+  background-color: #ff5c5c;
+}
+
+.yellow {
+  background-color: #ffbd4d;
+}
+
+.green {
+  background-color: #5cff5c;
+}
+
+.terminal {
+  padding: 10px;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.output {
+  white-space: pre-wrap; /* Preserve whitespace */
+}
+
+.input {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #ffffff;
+  outline: none;
+}
+.prompt {
+  color: #00ff00; /* Verde */
+}
+.cursor {
+  display: inline;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+      opacity: 0;
+  }
+}
+
+/* ================================= */
