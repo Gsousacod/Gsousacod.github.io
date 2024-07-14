@@ -47,7 +47,7 @@ function toggleCursor() {
 
 function typeMessage(message) {
     let index = 0;
-    const typingSpeed = 100; // Tempo em milissegundos entre cada letra
+    const typingSpeed = 70; // Tempo em milissegundos entre cada letra
 
     output.innerHTML += `<span class="prompt">gabriel/sobre_mim:~$</span> `;
     const cursor = document.createElement('span');

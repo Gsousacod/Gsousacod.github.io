@@ -17,6 +17,12 @@ body.dark-mode {
     --slider-background: #fff6f6;
     --slider-checked-background: #bb86fc;
 }
+h2{
+    text-align: center;
+    padding: 10px;
+    font-size: 3rem;
+    color: var(--text-color);
+}
 *{
     transition: background-color 0.5s, color 0.5s;
     font-family: 'Inter', sans-serif;
@@ -175,14 +181,15 @@ input:checked + .slider:before {
 .btn:hover {
     background-color: var(--link-hover-color);
 }
-
+#home,#about, #projects, #experience{
+    width: 100%;
+    height: 100vh; 
+}
 #home{
     z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100vh; 
     position: relative;
     overflow: hidden;
     background-color: var(--background-color);
@@ -199,24 +206,6 @@ input:checked + .slider:before {
 #home p{
     font-size: 2.0rem;
 }
-#about{
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh; 
-    position: relative;
-    overflow: hidden;
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
-.container-about{
-    max-width: 1200px;
-}
-#about h2{
-    font-size: 3rem;
-}
 .content-home{
     text-align: center;
     width: 100%;
@@ -230,6 +219,121 @@ input:checked + .slider:before {
     transform: rotate(180deg);
     animation: rotate-shape 5s infinite linear;
 }
+
+/* ============================== */
+#about{
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.container-about{
+    max-width: 1200px;
+}
+
+.content-about{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.about-me{
+    width: 600px;
+}
+/* =========================Cards================== */
+#projects{
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+.container-projects{
+    max-width: 1200px;
+}
+.card-projects{
+    display: flex;
+}
+.row{
+    margin: 10px;
+}
+
+.project-card {
+    padding: 15px;
+    border-radius: 50px;
+    border: 1px solid var(--text-color);
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .project-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+  .project-content {
+    padding: 20px;
+  }
+  .project-title {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .project-description {
+    font-size: 1rem;
+    color:var(--text-color);
+  }
+  .project-tech {
+    margin-top: 15px;
+  }
+  .project-tech span {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--link-color);
+    font-size: 0.9rem;
+  }
+  .tech-html { background-color: #e34c26; }
+  .tech-css { background-color: #264de4; }
+  .tech-js { background-color: #f0db4f; color: #323330; }
+  .tech-react { background-color: #61dafb; color: #20232a; }
+  .project-link {
+    margin-top: 20px;
+    display: inline-block;
+    color: #0288d1;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .project-link:hover {
+    color: #026fa4;
+  }
+  .project-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .project-buttons a {
+    margin-right: 10px;
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  .btn-github { background-color: #333; width: 50%; }
+  .btn-github i,.btn-preview i{
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+
+  .btn-github:hover { background-color: #444; }
+  .btn-preview { background-color: #0288d1; width: 50%;}
+  .btn-preview:hover { background-color: #026fa4; }
+  
+
 
 @keyframes rotate-shape {
     from {
